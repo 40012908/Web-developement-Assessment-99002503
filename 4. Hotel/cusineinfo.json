@@ -1,0 +1,27 @@
+[
+    {
+        "Hotel ":"marriot",
+        "city":"Rajajinagar",
+        "type":"veg",
+        "category":"dal makhni"
+    },
+    {
+        "Hotel ":"countryinn",
+        "city":"udupi",
+        "type":"nON-veg",
+        "category":"chiken kadai"
+    },
+    {
+        "Hotel ":"sainath",
+        "city":"belgavi",
+        "type":"veg",
+        "category":"North Indian veg biryani"
+    },
+    {
+        "Hotel ":"suites",
+        "city":"mysore",
+        "type":"Non-veg",
+        "category":"chiken tikka"
+    }
+
+]

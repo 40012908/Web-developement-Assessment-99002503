@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js">
+    </script>
+ <script>
+    $(document).ready(function(){
+        $('#showbooks').click(function(){
+            var url='http://localhost:3003/showbooks';
+            $.get(url,function(data,status){
+                data.forEach(book=>{
+
+                    var str='';
+                    for(const prop in book){
+                        str+= prop+' '+book[prop]+' '+'<br>';
+                    }
+                    $('#mydiv').append(str).append('<br').append('<br>')
+                });
+            });
+        });
+        $('#showauthor').click(function(){
+             var url='http://localhost:3003/showByAuthor';
+             var authchoice = $('#author').val();
+             $.get(url,{author:authchoice},function(data,status){
+                data.forEach(book=>{
+ 
+                var str='';
+                for(const prop in book){
+                        str+= prop+' '+book[prop]+' '+'<br>';
+                    }
+                $('#mydiv').append(str).append('<br').append('<br>')
+            });
+        })
+    });
+        $('#showcategory').click(function(){
+            var url='http://localhost:3003/showByCategory';
+            var authchoice=$('#category').val();
+            $.get(url,{category:authchoice},function(data,status){
+                data.forEach(book=>{
+
+                    var str='';
+                    for(const prop in book){
+                        str+= prop+' '+book[prop]+' '+'<br>';
+                    }
+                    $('#mydiv').append(str).append('<br').append('<br>')
+                });
+            });
+        })
+    })
+</script>
+</head>
+<body>
+    <button id="showbooks">search hotels</button><br>
+    <input type="text" id="author">
+    <button id="showauthor">Hotels by city</button><br>
+    <input type="text" id="category">
+    <button id="showcategory">Hotels by Cuisine</button><br>
+    <div id="mydiv" style="background-color: goldenrod;"></div>
+ 
+</body>
+</html>
