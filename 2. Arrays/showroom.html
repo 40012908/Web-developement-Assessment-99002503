@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script>
+function equipment(){
+    arrMobile = 'Redmi~moto~Samsung~Realme~Oppo~iphone';
+    msplit = arrMobile.split('~').join(" <br> ");
+    arrlaptop = 'Dell~Samsung~Hp~Lenovo~Acer~Apple';
+    lsplit = arrlaptop.split('~').join(" <br> ");
+    arrTV = 'Samsung~Sony~LG~Lenovo';
+    tsplit = arrTV.split('~').join(" <br> ");
+    
+
+    var sel = document.getElementById("handset");
+
+    if(sel.value == 'laptop'){
+        document.getElementById("mydivcontainer").innerHTML=lsplit;
+    }
+    else if(sel.value == 'TV'){
+        document.getElementById("mydivcontainer").innerHTML=tsplit;
+    }
+    else if(sel.value == 'mobile'){
+        document.getElementById("mydivcontainer").innerHTML=msplit;
+    }
+    else{
+        document.getElementById("mydivcontainer").innerHTML="";
+    }
+ }
+</script>
+
+</head>
+<body>  
+    select Equipment
+    <select name='handsets' id="handset" onclick="equipment()">
+        <option value="mobile">Mobile</option>
+        <option value="laptop">Laptop</option>
+        <option value="TV">TV</option>
+    </select>
+    <div style="background-color: khaki" id="mydivcontainer">  </div>
+    
+</body>
+</html>
