@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div style="background-color: yellow;" id="mydiv1"></div>
+    <div style="background-color: yellow;" id="mydiv2"></div>
+
+    <script>
+        urname = localStorage.getItem('uname')
+        urmess = localStorage.getItem('message');
+        document.getElementById("mydiv1").innerHTML= urname+" "+urmess;
+
+        sesname = sessionStorage.getItem('uname')
+        sesmess = sessionStorage.getItem('message');
+        document.getElementById("mydiv2").innerHTML= sesname+" "+sesmess;
+
+    </script>
+    
+</body>
+</html>

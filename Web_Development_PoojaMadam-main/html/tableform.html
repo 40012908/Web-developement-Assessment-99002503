@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend align = "center">Student Details</legend>
+        
+        <table border="1" >
+        
+        <form action="blockdemo.html" method="POST" name="myform">   
+
+
+            <tr>
+                <th>Enter Name</th>
+                <!-- <tr>contenteditable="true"</tr> -->
+                <td><input type="text" name="username" id="uname" placeholder="Enter Name"/><br/> </td> 
+            </tr>
+
+            <tr>
+                <th>Enter Password</th>
+                <td><input type= "password" name= "password" id="password" placeholder="Enter password"/><br/></td>
+                <br/>
+            </tr>
+
+            <tr>
+                <th>Gender</td>
+                <td>
+                    <input type="radio" name="r1" value="Male">Male
+                    <input type="radio" name="r1" value="Male">Female
+                </td>
+                <br/>
+            </tr>
+            <tr>
+                <th>Hobbies</th>
+                <td>
+                    <input type="checkbox" name="hobby" value="0">Sports
+                    <input type="checkbox" name="hobby" value="0">Music
+                    <input type="checkbox" name="hobby" value="0">Dance
+                    <input type="checkbox" name="hobby" value="0">Drawing<br/>
+                </td>
+            </tr>
+            
+            <tr>
+                <th>Select Language</th>
+                <td>
+                    <select name="lang" id="lang" multiple size="3"> 
+                        <option value="Select">---Select---</option>
+                        <option value="Select">Java</option>
+                        <option value="Select">Hybernate</option>
+                        <option value="Select">HTML</option>
+                        <option value="Select">Spring</option><br/>
+                    </select>
+                </td>    
+            </tr>
+
+            
+            <tr>
+                <td> Comments:</td>
+                <td><textarea rows="10" cols="80"></textarea><br/></td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <input type="Submit" value="register"/>
+                    <input type="Reset" value="Clear"/>
+                </td>
+            </tr>
+
+            
+        </table>
+    </fieldset>
+</body>
+</html>

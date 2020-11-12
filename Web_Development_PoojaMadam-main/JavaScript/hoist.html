@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        function geetUser(username){
+            document.write('Welcome' +username);
+        }
+        function greetUser(){
+            document.write("Hello");
+        }
+        //greetUser("Pooja");
+        greetUser();
+         */
+        /*
+        greet();
+        function greet(){
+            document.write('Hello')
+
+        }
+        //check();
+        var check =function(){
+            document.write('Welcome')
+        }
+        check();
+        */
+       setTimeout(function(){
+           console.log('TimeOut completeed')
+       },2000)
+       setInterval(function(){
+           //Auto callback function
+           console.log('Ping Server------')
+       },2000)
+
+       document.write("Using Lamda Expression <br/>")
+       setTimeout(()=>{
+           console.log('TimeOut completeed')
+       },2000)
+       setInterval(()=>{
+           //Auto callback function
+           console.log('Ping Server------')
+       },2000)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

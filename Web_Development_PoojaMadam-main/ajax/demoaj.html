@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src= "https://code.jquery.com/jquery-2.2.3.js" ></script>
+       
+    <script>
+        // $(document).ready(function(){
+        //     $('#show').click(function(){
+        //     username=$('#username').val();
+        //     city =$('#city').val();
+        //     $('#mydiv').html('welcome' +username+' from '+city)
+        // }
+        function show(){
+            urname =document.getElementById("uname").value;
+        urcity = document.getElementById("ucity").value;
+
+        document.getElementById("mydiv").innerHTML= +urname +" "+urcity;
+
+        
+    </script>
+
+        
+</head>
+<body>
+    <div style="background-color: yellow;" id="mydiv"></div>
+
+    <tr>
+        <th>Enter Name</th>
+        <td><input type="text" name="username" id="uname" placeholder="Enter Name"/><br/> </td> 
+    </tr>
+
+    <tr>
+        <th>Enter City</th>
+        <td><input type= "text" name= "city" id="ucity" placeholder="Enter city"/><br/></td>
+        <br/>
+    </tr>
+    <tr>
+        <td>
+            <input type="Button" id =show value="Click here" onclick="show()"/>
+        </td>
+    </tr>
+</body>
+</html>

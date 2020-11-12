@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend align="left">Student Details</legend>
+
+        <table border="1">
+           
+    <form action="demo1.html" method="get" name="myform">
+
+    <tr>
+        <td>Enter Name</td>
+        <td><input type="text" name="username" id="uname" placeholder="Enter Name"/><br/> </td> 
+    </tr>
+
+    <tr>   
+        <td>Enter Password</td>
+        <td><input type="password" name="password" id="password" placeholder="Enter Password"/><br/></td>
+    </tr> 
+
+    <tr>
+        <td>Gender</td>
+        <td>
+            <input type="radio" name="r1" value="Male">Male
+            <input type="radio" name="r1" value="Female" checked >Female <br/>
+        </td>
+    </tr>
+
+    <tr> 
+        <td>Hobbies</td>
+        <td>
+            <input type="checkbox" name="hobby" value="0">Sports
+            <input type="checkbox" name="hobby" value="1">Music
+            <input type="checkbox" name="hobby" value="2">Dance
+            <input type="checkbox" name="hobby" value="3">Drawing <br/>
+        </td>
+    </tr>
+
+
+    <tr> 
+        <td>Select Language</td>
+        <td>
+            <select name="lang" id="lang" multiple size="1">
+                <option value="select">--select--</option>
+                <option value="Java">Java</option>
+                <option value="Hibernate">Hibernate</option>
+                <option value="HTML">HTML</option>
+                <option value="Spring">Spring</option>
+            </select><br/>
+        </td>
+    </tr> 
+    
+    <tr>
+        <td> REMARKS</td>
+        <td><textarea rows="10" cols="80"></textarea><br/></td>
+    </tr>
+    
+    <tr>
+        <td><input type="submit" value="Register"/></td>
+        <td><input type="reset" value="Clear"/></td>
+    </tr>
+    
+    </form>
+</table>
+</fieldset>
+</body>
+</html>

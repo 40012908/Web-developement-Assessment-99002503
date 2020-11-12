@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validateForm(){
+            if(document.getElementById("username").value==""){
+                alert("Enter your name");
+                document.myform.uname.focus();
+            }
+            else if(document.getElementById("ageid").value==""){
+                alert("Enter your Age");
+                document.myform.age.focus();
+            }
+            else if(document.getElementById("password").value==""){
+                alert("Enter your password");
+                document.myform.pass.focus();
+            }
+            else if(document.getElementById("gen1").checked=="" && document.getElementById("gen2").checked==""){
+                alert("Enter Gender");
+                document.myform.gender[0].focus();
+            }else{
+                alert("You are Registered");
+                document.myform.submit();
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="demo.html" name="myform">   
+        <!-- method="GET" is used to show values in url && method="POST" dosent shows values in url --> 
+
+       Enter name
+       <input type ="text" name = "uname" id= "username" placeholder="Enter name"/><br/>
+
+       Enter age
+       <input type ="number" name = "age" id= "ageid" placeholder="Enter age"/><br/>
+
+       Enter password 
+       <input type= "password" name= "pass" id="password" placeholder="Enter password"/><br/>
+
+       Gender
+       <input type="radio" name="gender" id="gen1" value="Male">Male
+       <input type="radio" name="gender" id="gen2" value="Male">Female
+       <br/>
+
+       <input type="button" value="submit" onclick="validateForm()">
+    </form>
+</body>
+</html>

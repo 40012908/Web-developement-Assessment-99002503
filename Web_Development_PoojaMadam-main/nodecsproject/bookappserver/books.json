@@ -1,0 +1,18 @@
+[{
+    "title":"java in action",
+    "author":"kathy",
+    "price":"1000",
+    "category":"Tech"
+},
+{
+    "title":"HTML in action",
+    "author":"Beth",
+    "price":"2000",
+    "category":"Tech"
+},{
+    "title":"Management",
+    "author":"Rick",
+    "price":"3000",
+    "category":"Management"
+}
+]

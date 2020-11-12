@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function search(){
+        atrname =document.getElementById("aname").value;
+        document.getElementById("mydiv").innerHTML= +atrname;}
+    </script>
+</head>
+<body>
+
+    <table border="1">
+
+        <form>
+            <td><button id = "mybutton">Show Books</button></td>
+
+            <tr>
+                <td>Enter Author</td>
+                <td><input type="text" name="authorname" id="aname" placeholder="Enter Author Name"/><br/> </td>
+            </tr>
+            
+            <tr>
+                <td><input type="button" value="Search" onclick="search()"/></td>
+            </tr>
+        </form>
+    </table>
+    
+    <div id="mydiv" style="background-color: yellow;"></div>
+
+</body>
+</html>

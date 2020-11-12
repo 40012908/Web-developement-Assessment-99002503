@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Scope</title>
+    <script>
+        var local=10;
+        global=90;
+        function checkData(){
+            console.log(local);
+            console.log(global);
+            var inlocal = 'Local inside func';
+            inglobal = 'global inside func';
+        }
+        checkData();
+        //console.log(inlocal);
+        console.log(inglobal);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

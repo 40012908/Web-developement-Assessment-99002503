@@ -1,0 +1,28 @@
+$bgcolor:orange;
+$color: green;
+
+@mixin header_style {
+    background-color: $bgcolor;
+    letter-spacing: 3px;
+    color:$color;
+    text-transform: uppercase;
+}
+@mixin para_style {
+    background-color: bisque;
+    color: purple;
+}
+
+h1{
+    @include header_style();
+    text-transform:lowercase;
+}
+h2{
+    @include header_style();
+    color: blue;
+}
+h3{
+    @include header_style();
+}
+p{
+    @include para_style();
+}

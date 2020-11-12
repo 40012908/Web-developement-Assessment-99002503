@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script  src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('#ShowUser').click(function(){
+            var url = 'http://localhost:3003/ShowUser';
+            $.get(url,function(data,status){
+                data.forEach(user => {
+                    var str='';
+                    for(const prop in user){
+                        str+= prop+' '+user[prop]+' '+'<br>';
+                    }
+                    $('#mydiv').append(str).append('<br>');
+                });
+            });
+        });
+     });
+
+        $(document).ready(function(){
+        $('#showusername').click(function(){
+            var url = 'http://localhost:3003/showusername';
+            var usernamechoice = $('#username').val();
+        $.get(url,{username:usernamechoice},function(data,status){
+            data.forEach(book => {
+                var str ='';
+                for(const prop in book){
+                    str+= prop+' '+book[prop]+' '+'<br>';
+                }    
+                $('#mydiv').append(str).append('<br>');
+            });
+        })
+    });
+});
+
+        $(document).ready(function(){
+        $('#showcity').click(function(){
+            var url = 'http://localhost:3003/showcity';
+           var usercity = $('#city').val();
+            $.get(url,{city:usercity},function(data,status){
+                data.forEach(user => {
+                    var str='';
+                    for(const prop in user){
+                        str+= prop+' '+user[prop]+' '+'<br>';
+                    }
+                    $('#mydiv').append(str).append('<br>');
+                });
+            });
+        });
+     });
+
+        $(document).ready(function(){
+        $('#showemailid').click(function(){
+            var url = 'http://localhost:3003/showemailid';
+            var useremalid = $('#emailid').val();
+            $.get(url,{emailid:useremalid},function(data,status){
+                data.forEach(user => {
+                    var str='';
+                    for(const prop in user){
+                        str+= prop+' '+user[prop]+' '+'<br>';
+                    }
+                    $('#mydiv').append(str).append('<br>');
+                });
+            });
+        });
+     });
+
+        $(document).ready(function(){
+        $('#showphone').click(function(){
+            var url = 'http://localhost:3003/showphone';
+            var userphone = $('#phone').val();
+            $.get(url,{phone:userphone},function(data,status){
+                data.forEach(book => {
+                    var str='';
+                    for(const prop in book){
+                        str+= prop+' '+book[prop]+' '+'<br>';
+                    }
+                    $('#mydiv').append(str).append('<br>');
+                });
+            });
+        });
+     });
+    </script>
+    <script src="formvalidation1.js"></script>
+</head>
+<body>
+    <table>
+        <form >
+        <tr>
+            <td> <button id="ShowUser">Show User</button><br></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="username" name="usernameinput"> </td>
+            <td>  <button id="showusername">Search By Username</button><br></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="city" name="cityname"> </td>
+            <td><button id="showcity">Search By City</button><br></td>
+        </tr>
+        <tr>
+            <td> <input type="text" id="emailid" name="Useremailid"></td>
+            <td><button id="showemailid">Search by Emailid</button><br></td>
+        </tr>
+        <tr>
+            <td> <input type="text" id="phone" name="userphonenumber"></td>
+            <td> <button id="showphone">Search by Phone Number</button></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="register" onclick="validationForm()" action="success1.html"method="GET"name="myform"/>
+            </td>
+            <td>
+                <input type="reset" value="clear"/>
+            </td>
+        </tr>
+        <tr>
+            <td>  <div id="mydiv"></div></td>
+        </tr>
+
+    </form>
+    </table>
+</body>
+</html>

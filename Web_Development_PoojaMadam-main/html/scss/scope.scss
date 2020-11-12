@@ -1,0 +1,19 @@
+$bgcolor:red;
+$color:yellow;
+$fontsize:20px !global;
+
+h2{
+    background-color: $bgcolor;
+    $color: blue;
+    color: $color;
+    font-size: $fontsize;
+}
+p{
+    $bgcolor:orange !global;
+    background-color: $bgcolor;
+    color:$color;
+    font-size: $fontsize
+} 
+h2{
+    background-color: $bgcolor;
+}

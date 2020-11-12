@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // document.write("Welcome to JS");
+        // var message ="Have a Good Day!!";
+        // alert(message);
+
+        // local storage will save 
+        document.write("Hello.."+localStorage.getItem('uname'));
+        document.write(localStorage.getItem('message'));
+
+        // session storage only worked if the file is open
+        document.write("Hello.."+sessionStorage.getItem('uname'));
+        document.write(sessionStorage.getItem('message'));
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

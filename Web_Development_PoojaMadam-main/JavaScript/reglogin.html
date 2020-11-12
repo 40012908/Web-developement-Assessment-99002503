@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registration</title>
+    <script>
+        var username =['pooja','manthan',''];
+        var len = username.length;
+        user =prompt('Enter Name');
+        var flag =false;
+
+        for(i=0;i<len+1;i++){
+            if(user !=username[i])
+            {
+                flag=true;
+            }
+            else{
+                //username.push(i);
+                flag=false;
+                break;
+            }                     
+        }
+        if(flag==true){
+            document.write("Invalid!! Usename doesn't exist!!");
+
+            
+        }else{
+            document.write("Successfully Logged in " +user +"<br>");
+            username += user;
+            //document.write(username +"<br>");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

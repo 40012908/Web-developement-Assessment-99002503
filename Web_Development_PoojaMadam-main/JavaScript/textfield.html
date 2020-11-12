@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sayHello(){
+            
+            var textf= document.getElementById("TA").value;
+
+            document.getElementById("Tadiv").innerHTML= textf;
+
+        }
+    </script>
+
+</head>
+<body>
+    
+    <!-- Enter Comments <textarea id="TA" cols="30"rows="10"onkeyup="sayHello()"></textarea> -->
+    
+    Enter Comments <textarea id="TA" cols="30"rows="10"onkeypress="sayHello()"></textarea>
+
+    <div>
+        <div id="Tadiv" style="background-color: aqua;"></div>
+    </div>
+</body>
+</html>

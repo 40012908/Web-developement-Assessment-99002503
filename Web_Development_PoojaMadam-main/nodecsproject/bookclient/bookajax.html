@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <script src="https://code.jquery.com/jquery-2.2.3.min.js"> // to extract data from json into 
+ //.js and from there to frontend
+ </script>
+ <script>
+    $(document).ready(function(){
+    $('#showbooks').click(function(){
+        var url = 'http://localhost:3000/showBooks'; //Communication with the .js file 
+        $.get(url,function(data,status){ // starts communicating with above URL
+            data.forEach(book => {
+                var str ='';
+                for(const prop in book){ //Search of data one by one
+                    str+= prop+' '+book[prop]+' '+'<br>'; //puts into string
+                }    
+                $('#mydiv').append(str).append('<br>'); // puts data into the below container
+            });
+        })
+    });
+    $('#showauthor').click(function(){
+        var url = 'http://localhost:3000/showByauthor';
+        var authchoice = $('#author').val();
+        $.get(url,{author:authchoice},function(data,status){
+            data.forEach(book => {
+                var str ='';
+                for(const prop in book){
+                    str+= prop+' '+book[prop]+' '+'<br>';
+                }    
+                $('#mydiv').append(str).append('<br>');
+            });
+        })
+    });
+    
+    $('#showcategory').click(function(){
+        var url = 'http://localhost:3000/showByCategory';
+        var catchoice = $('#category').val();
+        $.get(url,{category:catchoice},function(data,status){
+            data.forEach(book => {
+                var str ='';
+                for(const prop in book){
+                    str+= prop+' '+book[prop]+' '+'<br>';
+                }    
+                $('#mydiv').append(str).append('<br>');
+            });
+        })
+    });
+    })
+ </script>
+</head>
+<body>
+    <button id="showbooks">Show Books</button><br>
+    <input type="text" id="author">
+    <button id="showauthor">Search By Author</button><br>
+    <input type="text" id="category">
+    <button id="showcategory">Search By Category</button><br>
+    <div id="mydiv"></div>
+</body>
+</html>

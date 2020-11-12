@@ -1,0 +1,17 @@
+body{
+    background-color: aqua;
+}
+h1{
+    background-color: burlywood;
+    color: black;
+}
+h2{
+    background-color: blue;
+    color: black;
+    text-transform: uppercase;
+}
+p{
+    background-color: darkgreen;
+    color: black;
+    text-transform: uppercase;
+}

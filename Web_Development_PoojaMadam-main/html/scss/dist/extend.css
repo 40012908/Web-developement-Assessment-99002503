@@ -1,0 +1,21 @@
+h1, h2#headtwo, div > p, div > p#headone, h1#headone {
+  color: red;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+h1#headone, div > p#headone {
+  background-color: orange;
+}
+
+div > p {
+  background-color: rebeccapurple;
+}
+
+h2, h2#headtwo {
+  text-decoration: underline;
+}
+
+h2#headtwo {
+  font-style: italic;
+}

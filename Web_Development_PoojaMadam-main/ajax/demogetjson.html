@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('button').click(function(){
+
+                $.get("books.json",function(data,status){
+                    data.forEach(book=>{
+                        var str = '';
+                        for(const prop in book){
+                            str+= prop+' '+book[prop]+' '+'<br>';
+                        }
+                        $('#mydiv').append(str).append('<br>');
+                    });
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id = "mybutton">Show Messages</button>
+    <div id ="mydiv"></div>
+</body>
+</html>

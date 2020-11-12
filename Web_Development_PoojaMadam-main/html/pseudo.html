@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/*         
+        p,h1,h2{
+            color: blueviolet;
+        }
+        .myclass{
+            font-style: italic;
+            letter-spacing: 3px;
+        }
+        #header{
+            background-color:bisque;
+        }
+        h2.myclass{
+            letter-spacing: 5px;
+            text-decoration:underline;
+        }
+        div p{
+            color: brown;
+        }
+        div>p{
+            text-decoration: darkgreen;   
+            color: dodgerblue;
+        }
+        section>p{
+            text-decoration: darkgreen;  
+            color:black;
+        } */
+        body :first-child{
+            letter-spacing: 5px;
+        }
+        p :first-of-type{
+            color: blue;
+        }
+        div :last-child{
+            background-color: blueviolet;
+        }
+        p :last-of-type{
+            color: green;
+        }
+        body h1 :nth-of-type(1){
+            text-transform: uppercase;
+        }
+        /*
+        div p:first-of-type{
+            background-color: cyan;
+        }
+        div p:last-child{
+            color: orange;
+        } */
+
+    </style>
+</head>
+<body>
+    <p> Inside p</p> 
+    <p class="myclass">Inside P with class</p> 
+    <h1>hello world</h1> 
+    <h1 id="header" class="myclass" >Inside h1 with class</h1> 
+    <h2>Inside H2</h2> <h2 class="myclass">Inside h2</h2> 
+    <div> 
+        <h1>h1 Inside div</h1> 
+        <p>p child of div</p> 
+        <p>second child of div</p> 
+        <section> 
+            <h1>h1 Inside section</h1> 
+            <p>p child of section</p> 
+        </section>
+        <p>Last Child</p>
+    </div>
+</body>
+</html>

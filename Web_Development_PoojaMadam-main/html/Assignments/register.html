@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<script src="register.js"></script>
+</head>
+<body>
+    <table>
+    <form action="success.html"method="GET"name="myform">
+        <tr>
+            <td>Enter name</td>
+            <td>
+                <input type="text" name="username" id="uname" placeholder="Enter name"/><br/>
+            </td>
+        </tr>
+        <tr>
+            <td>Enter Password</td>
+            <td>
+                <input type="password" name="password" id="pass" placeholder="Enter password"/><br>
+            </td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input type="radio" name="gender" id="gen1" value="male">male
+                <input type="radio" name="gender" id="gen2" value="female">female
+            <br/>
+            </td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td> 
+                <input type="text" name="age" id="age1"><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="register" onclick="validationForm()"/>
+            </td>
+            <td>
+                <input type="reset" value="clear"/>
+            </td>
+        </tr>
+    </form>
+    </table>
+</body>
+</html>
+

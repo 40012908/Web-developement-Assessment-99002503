@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li{
+            text-transform: uppercase;
+            color: green;
+        }
+        ul li:first-child{
+            color: red;
+        }
+        ul#cartoon {
+            text-decoration: underline;
+        }
+
+        ul #cartoon :last-child {
+            letter-spacing: 5px;
+            text-decoration: underline;
+        }
+        ol li{
+            color: blue;
+        }
+        ul li :nth-child(2){
+            text-decoration: underline;
+        }
+        
+    </style>
+</head>
+<body>
+    <ul style="list-style-type:lower-latin;">
+        <li>Mango</li>
+        <li>Apple</li>
+        <li>Orange</li>
+    </ul>
+    <ol style="list-style-type: upper-alpha;">
+        <li id="course">JAVA</li>
+        <li>HTMl</li>
+        <li>CSS</li>
+    </ol>
+    <ul style="list-style-type: none;" id="cartoon">
+        <li>Tom</li>
+        <li>Micky</li>
+        <li>Donald</li>
+    </ul>
+</body>
+</html>

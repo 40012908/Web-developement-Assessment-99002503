@@ -1,0 +1,26 @@
+[
+    {
+        "username":"Praveen",
+        "city":"Bangalore",
+        "emailid":"cpra@gmail.com",
+        "phone":"9876543234"
+    },
+    {
+        "username":"Kumar",
+        "city":"Mumbai",
+        "emailid":"ckumar@gmail.com",
+        "phone":"9778546235"
+    },
+    {
+        "username":"Chaubey",
+        "city":"Mysore",
+        "emailid":"chaubeymysore@gmail.com",
+        "phone":"9986756098"
+    },
+    {
+        "username":"prashanth",
+        "city":"Chennai",
+        "emailid":"Prashanth@gmail.com",
+        "phone":"8296538625"
+    }
+]

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <script>
+        function sayHello(){
+            uname = document.getElementById("username").value;
+            city = document.getElementById("city").value;
+            //document.write(+uname+" "+city);
+            document.getElementById("mydiv").innerHTML='Great Day'+uname;
+            document.getElementById("mypara").innerText='Welcome to'+city;
+
+        }
+    </script>
+</head>
+<body>
+
+        Enter name <input type="text" id="username"><br/>
+
+        Enter city <input type="text" id="city"><br/>
+
+        <input type="button" value="Register" onclick="sayHello()" >
+        
+        <div id="mydiv" style="background-color: aqua;"></div>
+
+        <p id="mypara"></p>
+    
+</body>
+</html>
